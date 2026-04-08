@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <h1>Weather App</h1>
@@ -31,6 +33,10 @@
                     <img src="search.png" width="20" height="20" loading="lazy">
                 </button>
             </form>
+            <div class="error-container sub-container">
+                <img src="not-found.png" width="300" height="300" loading="lazy">
+                <p>City Not Found</p>
+            </div>
             <!--loading screen container-->
             <div class="loading-container sub-container">
                 <img src="loading.gif" width="150" height="150" loading="lazy">
@@ -57,7 +63,7 @@
                         <p>Humidity</p>
                         <p data-humidity></p>
                     </div>
-                     <div class="parameter">
+                    <div class="parameter">
                         <img src="cloud.png">
                         <p>Clouds</p>
                         <p data-clouds></p>
@@ -69,4 +75,5 @@
 
     <script src="real.js"></script>
 </body>
+
 </html>
